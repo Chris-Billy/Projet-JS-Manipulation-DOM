@@ -85,9 +85,9 @@ body,html{
     color:white;
 }
 .red-but:hover{
-    margin-top:1%;
+    margin-top: 1%;
     transition-duration: 200ms;
 }
-#page1{
+#calculatrice{
     display:none;
 }

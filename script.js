@@ -14,3 +14,14 @@ function displayPage(page){
     
     actualPage = page;
 }
+
+let title = document.getElementById('title');
+
+
+function replaceText(text){
+    title.innerHTML = text;
+}
+
+function defaultText(){
+    title.innerHTML = "Essayons le Javascript";
+}
