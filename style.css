@@ -17,11 +17,32 @@ body,html{
     justify-content: center;
     align-items: center;
 }
+.header{
+    display:flex;
+    height:10%;
+    width: 100%;
+    align-items: center;
+}
+#imghome{
+    margin-left: 2%;
+    margin-top: 1%;
+    height:50px;
+    width: 50px;
+    
+}
 .frame{
     height:80%;
     width: 80%;
     background:rgba(255,255,255,0.2);
     border-radius: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home{
+    height:100%;
+    width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -65,4 +86,21 @@ body,html{
 .red-but:hover{
     transition-duration: 200ms;
     margin-top: 1%;
+}
+
+.page1{
+    display:none;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contain{
+    display:flex;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

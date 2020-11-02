@@ -9,14 +9,24 @@
 	<body>
 		<div class="container">
             <div class="frame">
-                <div class="text">
-                    <h1 id="title">Essayons le Javascript</h1>
+                <div class="header">
+                        <img id="imghome" src="img/home.png" onclick="displayPage('home')">
+                    </div>
+                <div class="home" id="home">
+                    <div class="text">
+                        <h1 id="title">Essayons le Javascript</h1>
+                    </div>
+                    <div class="buttons">
+                        <button class="red-but" id="page1" onclick="displayPage('page1')">Page 1</button>
+                        <button class="red-but" id="page2" onclick="changeTitle('Page 2')">Page 2</button>
+                        <button class="red-but" id="page3" onclick="changeTitle('Page 3')">Page 3</button>
+                        <button class="red-but" id="page4" onclick="changeTitle('Page 4')">Page 4</button>
+                    </div>
                 </div>
-                <div class="buttons">
-                    <button class="red-but" id="page1" onclick="changeTitle('Page 1')">Page 1</button>
-                    <button class="red-but" id="page2" onclick="changeTitle('Page 2')">Page 2</button>
-                    <button class="red-but" id="page3" onclick="changeTitle('Page 3')">Page 3</button>
-                    <button class="red-but" id="page4" onclick="changeTitle('Page 4')">Page 4</button>
+                <div class="page1">
+                    <div class="contain">
+                    
+                    </div>
                 </div>
             </div>
         </div>
