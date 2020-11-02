@@ -88,6 +88,34 @@ body,html{
     margin-top: 1%;
     transition-duration: 200ms;
 }
-#calculatrice{
+#yamaha{
     display:none;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+    background:blue;
 }
+/* DUCATI PART */
+
+#ducati{
+    display:none;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+}
+
+/* DUCATI PART END */
+
+/* SUZUKI PART */
+
+#suzuki{
+    display:none;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+}
+
+/* SUZUKI PART END */

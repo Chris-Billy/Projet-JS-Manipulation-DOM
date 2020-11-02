@@ -23,5 +23,5 @@ function replaceText(text){
 }
 
 function defaultText(){
-    title.innerHTML = "Essayons le Javascript";
+    title.innerHTML = "Découvrez les pilotes de ces écuries!";
 }
