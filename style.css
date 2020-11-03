@@ -252,6 +252,37 @@ body,html{
     background: #333333;
     color:white;
 }
+#yambtnapi{
+    height: 50px;
+    width: 200px;
+    border-radius:10px;
+    margin-top: 1%;
+    margin-bottom: -5%;
+    outline:none;
+    border:none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+}
+#yambtnapi:hover{
+    transition-duration: 500ms;
+    background: #333333;
+    color:white;
+}
+
+.yamshowapi{
+    display:none;
+    height:75%;
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#map{
+    display:flex;
+    height:100%;
+    width: 100%;
+    border-radius: 30px;
+}
 
 #yamgif{
     display:none;
@@ -307,7 +338,7 @@ body,html{
 #danilo-img{
     margin-top:15%;
     height:700px;
-    width: 580px;
+    width: 600px;
     transition-duration: 1s;
     margin-right: -10%;
 }
@@ -340,12 +371,21 @@ body,html{
     background-color: rgba(255, 255, 255, 0.4);
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
+    outline:none;
+    border:none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
 }
 .details-button button:hover{
     transform: scale(1.1);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: bold;
+}
+
+.pilote-info{
+    display:none;
+    height: 100%;
+    width: 100%;
 }
 
 /* DUCATI PART END */

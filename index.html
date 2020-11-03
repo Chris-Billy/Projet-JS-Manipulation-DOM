@@ -6,6 +6,8 @@
 		<title>TP Javascript</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
 	</head>
 	<body>
 		<div class="home-bg" id="container">
@@ -24,7 +26,7 @@
                             <button class="red-but animate__animated animate__tada" id="page4" onclick="displayPage('suzuki')" onmouseover="replaceText('Suzuki')" onmouseout="defaultText()">Suzuki</button> 
                         </div> 
                         <div class="date animate__animated animate__fadeIn animate__delay-1s">
-                    <h1 id="date">Test</h1>
+                    <h1 id="date" onmouseover="replaceMonth()" onmouseout="monthDefault()">Test</h1>
                     <h1 id="datep">Test</h1>
                 </div>
                     </div>
@@ -52,7 +54,15 @@
                                     <h1 id="yamt4">Début MotoGP avec Yamaha Petronas</h1>
                                 </div>
                             </div>
+                            <div class="yamclick">
                             <button id="yambtnret2" onclick="displayElem('yamafter','yambefore')">Retour</button>
+                            <button id="yambtnapi" onclick="displayElem('yamafter','yamshowapi');initMap()">Liste</button>
+                            </div>
+                        </div>
+                        <div class="yamshowapi" id="yamshowapi">
+                            <div id="map">
+                            
+                            </div>
                         </div>
                         <div class="yamgif animate__animated animate__fadeIn" id="yamgif">
                             <img id="yamfabgif" src="img/fabio.gif">
@@ -60,19 +70,20 @@
                         </div>
                     </div>
                 </div>
-                <div id="ducati">
+                <div id="ducati" class="animate__animated animate__zoomIn">
                     <div class="ducati-head">
-                        <img id="danilo-img" src="img/DaniloPetrucci.png">
+                        <img id="danilo-img" src="img/DaniloPetrucci.png" class="animate__animated animate__zoomIn animate__delay-1s">
                     </div>
 
                     <div class="choix">
-                        <div class="details-button">   
-                            <button id="pilote-button">Le Pilote</button>
+                        <div class="details-button" id="ducbut">   
+                            <button id="pilote-button" onclick="displayElem('ducbut','ducpilote')">Le Pilote</button>
                             <button id="moto-button">Sa Moto</button>
                             <button id="ecurie-button">Palmarès écurie</button>                         
                         </div>
 
-                        <div class="pilote-info">                            
+                        <div class="pilote-info" id="ducpilote">    
+                            
                         </div>
 
                         <div class="moto-info">                            
@@ -82,9 +93,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="suzuki">
+                <div id="suzuki" class="animate__animated animate__zoomIn">
                     <div class = "suzhead">
-                        <img id="suzMir" src="img/Joan_Mir.png" alt="image de Joan Mir" >
+                        <img id="suzMir" src="img/Joan_Mir.png" alt="image de Joan Mir" class="animate__animated animate__zoomIn animate__delay-1s">
                     </div>
                     <div class="suztext">
                         <div id="suzMir2">
