@@ -65,6 +65,7 @@ body,html{
     align-items: center;
     height:40%;
     width: 60%;
+    overflow: hidden
 }
 .red-but{
     height: 40px;
@@ -97,11 +98,17 @@ body,html{
     background: -moz-linear-gradient(top right, #0b0050, #2197A8);
     background: linear-gradient(to bottom left, #0b0050, #2197A8);
 }
-.ducati-bg{
-    
-}
 .suzuki-bg{
-    
+    background: #0A79BA;
+    background: -webkit-linear-gradient(top right, #0A79BA, #504919);
+    background: -moz-linear-gradient(top right, #0A79BA, #504919);
+    background: linear-gradient(to bottom left, #0A79BA, #504919);
+}
+.ducati-bg{
+    background: #D01818;
+    background: -webkit-linear-gradient(top right, #D01818, #606060);
+    background: -moz-linear-gradient(top right, #D01818, #606060);
+    background: linear-gradient(to bottom left, #D01818, #606060);
 }
 /* YAMAHA PART */
 #yamaha{

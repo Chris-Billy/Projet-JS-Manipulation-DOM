@@ -5,6 +5,7 @@
 		<meta keywords="">
 		<title>TP Javascript</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	</head>
 	<body>
 		<div class="home-bg" id="container">
@@ -15,25 +16,25 @@
                 <div id="home">
                     <div class="homecontent">
                         <div class="text"> 
-                            <h1 id="title">Découvrez les pilotes de ces écuries!</h1> 
+                            <h1 id="title" class="animate__animated animate__zoomIn">Découvrez les pilotes de ces écuries!</h1> 
                         </div> 
-                        <div class="buttons"> 
-                            <button class="red-but" id="page2" onclick="displayPage('yamaha')" onmouseover="replaceText('Yamaha')" onmouseout="defaultText()">Yamaha</button> 
-                            <button class="red-but" id="page3" onclick="displayPage('ducati')" onmouseover="replaceText('Ducati')" onmouseout="defaultText()">Ducati</button> 
-                            <button class="red-but" id="page4" onclick="displayPage('suzuki')" onmouseover="replaceText('Suzuki')" onmouseout="defaultText()">Suzuki</button> 
+                        <div class="buttons "> 
+                            <button class="red-but animate__animated animate__tada" id="page2" onclick="displayPage('yamaha')" onmouseover="replaceText('Yamaha')" onmouseout="defaultText()">Yamaha</button> 
+                            <button class="red-but animate__animated animate__tada" id="page3" onclick="displayPage('ducati')" onmouseover="replaceText('Ducati')" onmouseout="defaultText()">Ducati</button> 
+                            <button class="red-but animate__animated animate__tada" id="page4" onclick="displayPage('suzuki')" onmouseover="replaceText('Suzuki')" onmouseout="defaultText()">Suzuki</button> 
                         </div> 
                     </div>
                 </div>
-                <div id="yamaha">
+                <div id="yamaha" class="animate__animated animate__zoomIn">
                      <div class="yamhead" onclick="displayTxt('yambefore','yamafter')">
-                        <img id="yamfabio" src="img/1_0004_20-Fabio-Quartararo,-Body_DSC6852@2x.png">
+                        <img id="yamfabio" src="img/1_0004_20-Fabio-Quartararo,-Body_DSC6852@2x.png" class="animate__animated animate__zoomIn animate__delay-1s">
                         </div>
                     <div class="yamframe">
                         <div id="yambefore">
                             <h1 id="yamtxtbef">Clique sur Fabio Quartaro pour afficher son palmarès et sa biographie!</h1>
                             <button id="yambtnbef" onclick="displayTxt('yambefore','yamgif')">Clique ici pour voir un Gif de Fabio !</button>
                         </div>
-                        <div class="yamafter" id="yamafter">
+                        <div class="yamafter animate__animated animate__fadeIn" id="yamafter">
                             <div class="yampres">
                                 <div class="yamtitle">
                                     <h1 id="yamname">Fabio Quartararo</h1>
@@ -49,7 +50,7 @@
                             </div>
                             <button id="yambtnret2" onclick="displayTxt('yamafter','yambefore')">Retour</button>
                         </div>
-                        <div class="yamgif" id="yamgif">
+                        <div class="yamgif animate__animated animate__fadeIn" id="yamgif">
                             <img id="yamfabgif" src="img/fabio.gif">
                             <button id="yambtnret" onclick="displayTxt('yamgif','yambefore')">Retour</button>
                         </div>
