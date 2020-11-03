@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class="container">
+		<div class="home-bg" id="container">
             <div class="frame">
                 <div class="header">
                     <img id="imgret" src="img/home.png" onclick="displayPage('home')">
@@ -25,9 +25,33 @@
                     </div>
                 </div>
                 <div id="yamaha">
-                    <div class="windowcalc">
-                        <div class="calchead">
-                        
+                     <div class="yamhead" onclick="displayTxt('yambefore','yamafter')">
+                        <img id="yamfabio" src="img/1_0004_20-Fabio-Quartararo,-Body_DSC6852@2x.png">
+                        </div>
+                    <div class="yamframe">
+                        <div id="yambefore">
+                            <h1 id="yamtxtbef">Clique sur Fabio Quartaro pour afficher son palmarès et sa biographie!</h1>
+                            <button id="yambtnbef" onclick="displayTxt('yambefore','yamgif')">Clique ici pour voir un Gif de Fabio !</button>
+                        </div>
+                        <div class="yamafter" id="yamafter">
+                            <div class="yampres">
+                                <div class="yamtitle">
+                                    <h1 id="yamname">Fabio Quartararo</h1>
+                                    <h3 id="yamage">21 ans</h3>
+                                    <h4 id="yamjob">Pilote Professionnel</h4>
+                                </div>
+                                <div class="yamchrono">
+                                    <h1 id="yamt1">Double Champion CEV</h1>
+                                    <h1 id="yamt2">Début Moto3</h1>
+                                    <h1 id="yamt3">Début Moto2 et Victoire GP</h1>
+                                    <h1 id="yamt4">Début MotoGP avec Yamaha Petronas</h1>
+                                </div>
+                            </div>
+                            <button id="yambtnret2" onclick="displayTxt('yamafter','yambefore')">Retour</button>
+                        </div>
+                        <div class="yamgif" id="yamgif">
+                            <img id="yamfabgif" src="img/fabio.gif">
+                            <button id="yambtnret" onclick="displayTxt('yamgif','yambefore')">Retour</button>
                         </div>
                     </div>
                 </div>
@@ -35,6 +59,7 @@
                     
                 </div>
                 <div id="suzuki">
+                    
                 </div>
             </div>     
         </div>
