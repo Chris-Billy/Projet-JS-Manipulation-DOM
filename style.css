@@ -294,6 +294,59 @@ body,html{
     justify-content: center;
     align-items:center;
 }
+.ducati-head{
+    position: absolute;
+    display:flex;
+    height:75%;
+    width: 25%;
+    justify-content: center;
+    right: 11%;
+    margin-bottom: 6%;
+    z-index: 4;
+}
+#danilo-img{
+    margin-top:15%;
+    height:700px;
+    width: 580px;
+    transition-duration: 1s;
+    margin-right: -10%;
+}
+.choix{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.details-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 10%;
+}
+.details-button button{
+    width: 75%;
+    height: 10%;
+    margin: 15px 15px 15px 90px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+.details-button button:hover{
+    transform: scale(1.1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /* DUCATI PART END */
 
@@ -305,6 +358,76 @@ body,html{
     width: 100%;
     justify-content: center;
     align-items:center;
+}
+.suzhead{
+    position:absolute;
+    display:flex;
+    height:80%;
+    width: 25%;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 61%;
+}
+
+#suzMir{
+    height:720px;
+    width: 600px;
+    transform: rotateY(180deg);
+}
+.suztext{
+    display: flex;
+    height:80%;
+    width: 87%;
+    background:rgba(255,255,255,0.3);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#suzMir2{
+    display: flex;
+    height: 80%;
+    width: 90%;
+    background:rgba(255, 255, 255,0.1);
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: column  ;
+}
+#suzname{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    margin-bottom: -2%;
+    margin-top: -0%;
+}
+#suzage{
+    font-family: 'Noto Sans JP', sans-serif;
+    color:white;
+    margin-bottom: -2%;
+}
+#suzwork{
+    font-family: 'Noto Sans JP', sans-serif;
+    color:white;
+}
+.suztitle{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    background: rgba(255, 255, 255,0.2);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.suztxt{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    
 }
 
 /* SUZUKI PART END */
