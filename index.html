@@ -26,14 +26,14 @@
                             <button class="red-but animate__animated animate__tada" id="page4" onclick="displayPage('suzuki')" onmouseover="replaceText('Suzuki')" onmouseout="defaultText()">Suzuki</button> 
                         </div> 
                         <div class="date animate__animated animate__fadeIn animate__delay-1s">
-                    <h1 id="date" onmouseover="replaceMonth()" onmouseout="monthDefault()">Test</h1>
+                    <h1 id="date">Test</h1>
                     <h1 id="datep">Test</h1>
                 </div>
                     </div>
                 </div>
                 <div id="yamaha" class="animate__animated animate__zoomIn">
-                     <div class="yamhead" onclick="displayElem('yambefore','yamafter')">
-                        <img id="yamfabio" src="img/1_0004_20-Fabio-Quartararo,-Body_DSC6852@2x.png" class="animate__animated animate__zoomIn animate__delay-1s">
+                     <div class="yamhead">
+                        <img id="yamfabio" src="img/1_0004_20-Fabio-Quartararo,-Body_DSC6852@2x.png" class="animate__animated animate__zoomIn animate__delay-1s"  onclick="displayElem('yambefore','yamafter')">
                         </div>
                     <div class="yamframe">
                         <div id="yambefore">
@@ -56,12 +56,20 @@
                             </div>
                             <div class="yamclick">
                             <button id="yambtnret2" onclick="displayElem('yamafter','yambefore')">Retour</button>
-                            <button id="yambtnapi" onclick="displayElem('yamafter','yamshowapi');initMap()">Liste</button>
+                            <button id="yambtnapi" onclick="displayElem('yamafter','yamshowapi')">Map</button>
                             </div>
                         </div>
-                        <div class="yamshowapi" id="yamshowapi">
-                            <div id="map">
-                            
+                        <div class="yamshowapi animate__animated animate__fadeIn" id="yamshowapi">
+                            <div class="yamchoose">
+                                <form id="formyam">
+                                    <label id="yamcount" for="country">Pays</label>
+                                    <select id="country" name="country">
+                                        <option value="france" id="yamopt">France</option>
+                                        <option value="australia" id="yamopt">Australia</option>
+                                        <option value="usa" id="yamopt">USA</option>
+                                    </select>
+                                </form>
+                                <a href="map/map.html" id="yamredirect" onclick="transfer()"><p id="yamredirect">Voir sur la carte</p></a>
                             </div>
                             <button id="yambtnret3" onclick="displayElem('yamshowapi','yamafter')">Retour</button>
                         </div>
@@ -96,26 +104,45 @@
                 </div>
                 <div id="suzuki" class="animate__animated animate__zoomIn">
                     <div class = "suzhead">
-                        <img id="suzMir" src="img/Joan_Mir.png" alt="image de Joan Mir" class="animate__animated animate__zoomIn animate__delay-1s">
+                        <img id="suzRins" src="img/Alex_Rins.png" alt="imge de Alex Rins" class="animate__animated animate__zoomIn animate__delay-1s" onclick="displayElem('suzbefore','suzafter')">
+                        <img id="suzMir" src="img/Joan_Mir.png" alt="image de Joan Mir" class="animate__animated animate__zoomIn animate__delay-1s" onclick="displayElem('suzbefore','suzafter')">
                     </div>
                     <div class="suztext">
-                        <div id="suzMir2">
-                            <div class="suztitle">
-                                <h1 id="suzname">Joan Mir</h1>
-                                <h3 id="suzage">23 ans</h3>
-                                <h4 id="suzwork">Pilote Professionnel</h4>
+                        <div id="suzclick1">
+                            <button id="suzbutpilote" onclick="suzdisplayElem('suzclick1','suzpilote')">Pilote</button>
+                            <button id="suzbutmoto" onclick="suzdisplayElem('suzclick1','suzbefore')">Écurie</button>   
+                        </div>
+                        <div id="suzpilote">
+                            <div id="suzbefore">
+                                <h1>Bonjour</h1>
+                                <div id="suzclick2">
+                                    <button id="suzbutret" onclick="suzdisplayElem('suzpilote','suzclick1')">Retour</button>
+                                </div>
                             </div>
-                            <div class="suztxt">
-                                <h1>Double Champion CEV</h1>
-                                <h1>Début Moto3</h1>
-                                <h1>Début Moto2 et Victoire GP</h1>    
-                                <h1>Début MotoGP avec Yamaha Petronas</h1>
+                            <div id="suzafter">
+                                <div id="suzMir2">
+                                    <div class="suztitle">
+                                        <h1 id="suzname">Joan Mir</h1>
+                                        <h3 id="suzage">23 ans</h3>
+                                        <h4 id="suzwork">Pilote Professionnel</h4>
+                                    </div>
+                                    <div class="suztxt">
+                                        <h1>Fini quatrième au CEV</h1>
+                                        <h1>Début Moto 3, 1er titre de Champion du Monde</h1>
+                                        <h1>Début Moto2 et Quatre Podiums</h1>    
+                                        <h1>Début MotoGP avec Suzuki ECSTAR</h1>
+                                    </div>
+                                </div>
+                                <div id="suzclick2">
+                                    <button id="suzbutret" onclick="suzdisplayElem('suzafter','suzbefore')">Retour</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div>    
                 </div>
             </div>     
         </div>
 	</body>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="suzscript.js"></script>
 </html>

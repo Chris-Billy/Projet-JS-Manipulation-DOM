@@ -33,7 +33,8 @@ body,html{
   display:flex;
   margin-top: 1%;
   margin-left: 2%;
-  height: 50px;  
+  height: 50px;
+  z-index: 10;
 }
 #imgret:hover{
   margin-top: 20px;  
@@ -142,9 +143,10 @@ body,html{
 
 #yamfabio{
     height:750px;
-    width: 620px;
+    width: 300px;
     transform: rotateY(180deg);
     transition-duration: 1s;
+    object-fit:cover;
 
 }
 #yambefore{
@@ -274,14 +276,9 @@ body,html{
     height:75%;
     width: 70%;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     
-}
-#map{
-    display:flex;
-    height:100%;
-    width: 100%;
-    border-radius: 30px;
 }
 #yambtnret3{
     height: 50px;
@@ -298,6 +295,70 @@ body,html{
     transition-duration: 500ms;
     background: #333333;
     color:white;
+}
+#formyam{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#yamcount{
+    font-family: 'Roboto', sans-serif;
+}
+
+#country, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#yamsub {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+#country #yamopt{
+    font-family: 'Roboto', sans-serif;
+}
+
+#yamsub:hover {
+  background-color: #45a049;
+}
+.yamchoose {
+    display:flex;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#yamredirect{
+    margin-top: 0%;
+    margin-bottom: -3%;
+    text-decoration: none;
+    color:black;
+    transition-duration: 250ms;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 10px 11px rgba(0, 0, 0, 0.4);
+}
+#yamredirect:hover{
+    color:#fafafa;
+    margin-bottom: -2%;
 }
 
 #yamgif{
@@ -329,7 +390,6 @@ body,html{
     background: #333333;
     color:white;
 }
-
 /* YAMAHA PART END */
 
 /* DUCATI PART */
@@ -419,18 +479,26 @@ body,html{
     position:absolute;
     display:flex;
     height:80%;
-    width: 25%;
+    width: 87%;
     justify-content: center;
     overflow: hidden;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    margin-left: 61%;
 }
-
 #suzMir{
+    z-index: 1;
+    object-fit: cover;
     height:720px;
-    width: 600px;
+    width: 300px;
     transform: rotateY(180deg);
+    margin-left: 28%;
+}
+#suzRins{
+    z-index: 1;
+    object-fit: cover;
+    height:720px;
+    width: 300px;
+    margin-right: 28%;
 }
 .suztext{
     display: flex;
@@ -440,15 +508,41 @@ body,html{
     border-radius: 50px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+#suzpilote{
+    display: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#suzbefore{
+    display:flex;
+    height:15%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#suzafter{
+    display:none;
+    height: 80%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #suzMir2{
     display: flex;
-    height: 80%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     background:rgba(255, 255, 255,0.1);
     border-radius: 50px;
     align-items: center;
-    flex-direction: column  ;
+    flex-direction: column;
 }
 #suzname{
     font-family: 'Roboto', sans-serif;
@@ -484,6 +578,62 @@ body,html{
     align-items: center;
     margin-top: 2%;
     
+}
+#suzclick1{
+    z-index: 2;
+    height: 50px;
+    width: 404px;
+}
+#suzclick2{
+    z-index: 2;
+}
+#suzbutret{
+    height: 50px;
+    width: 200px;
+    border-radius:10px;
+    margin-top: 1%;
+    margin-bottom: -5%;
+    outline:none;
+    border:none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+}
+#suzbutpilote{
+    height: 50px;
+    width: 200px;
+    border-radius:10px;
+    margin-top: 1%;
+    margin-bottom: -5%;
+    outline:none;
+    border:none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+}
+#suzbutmoto{
+    height: 50px;
+    width: 200px;
+    border-radius:10px;
+    margin-top: 1%;
+    margin-bottom: -5%;
+    outline:none;
+    border:none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+}
+#suzbutmoto:hover{
+    transition-duration: 500ms;
+    background: #333333;
+    color:white;
+}
+#suzbutpilote:hover{
+    transition-duration: 500ms;
+    background: #333333;
+    color:white;
+}
+#suzbutret:hover{
+    transition-duration: 500ms;
+    background: #333333;
+    color:white;
 }
 
 /* SUZUKI PART END */

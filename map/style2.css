@@ -1,0 +1,36 @@
+body,html{
+    padding:0;
+    margin:0;
+}
+
+.mapcontainer{
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: #DFC4CC;
+    background: -webkit-linear-gradient(top left, #DFC4CC, #873EE0);
+    background: -moz-linear-gradient(top left, #DFC4CC, #873EE0);
+    background: linear-gradient(to bottom right, #DFC4CC, #873EE0);
+    flex-direction: column;
+}
+
+#map{
+    display:flex;
+    height:80%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#yamredirect{
+    margin-top: 2%;
+    text-decoration: none;
+    color:black;
+    transition-duration: 250ms;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 10px 11px rgba(0, 0, 0, 0.4);
+}
+#yamredirect:hover{
+    color:#fafafa;
+}

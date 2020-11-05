@@ -3,11 +3,8 @@ let title = document.getElementById('title');
 let background = document.getElementById('container');
 let fabio = document.getElementById('yamfabio');
 let timed = document.getElementById('date');
+let place;
 let timed2 = document.getElementById('datep');
-let today = new Date();
-let dd = today.getDay();
-let mm = today.getMonth() + 1;
-let yyyy = today.getFullYear();
 
 function displayPage(page){
     console.log(actualPage);
@@ -75,37 +72,22 @@ switch (new Date().getMonth()) {
     break;
 }
 
-timed.innerHTML ='Nous sommes le : ' +dd+'/'+mm+'/'+yyyy ;
-
 function dispDate(){
     let currentTime = new Date();
+    let dd = currentTime.getDay() + 1;
+    let mm = currentTime.getMonth() + 1;
+    let yyyy = currentTime.getFullYear(); 
     let hh = currentTime.getHours();
     let m2 = currentTime.getMinutes();
     let ss = currentTime.getSeconds();
     timed2.innerHTML = 'Il est actuellement :' + hh + 'h' + m2 + 'm' + ss + 's';
+    timed.innerHTML ='Nous sommes le : ' +dd+'/'+mm+'/'+yyyy ;
 } 
 setInterval(dispDate, 1000);
 
-function monthDefault(){
-    timed.innerHTML ='Nous sommes le : ' +dd+'/'+mm+'/'+yyyy ;
+function transfer(){
+    place = document.getElementById("country").value;
+    localStorage.setItem('pos',place);
 }
 
-function replaceMonth(){
-    timed.innerHTML ='Nous sommes le : ' +dd+'/'+month+'/'+yyyy ;
-}
-
-let map;
-
-function initMap() {
-  const myLatLng = { lat: 48.886596, lng: 2.287496 };
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 18,
-    center: myLatLng,
-  });
-  new google.maps.Marker({
-    position: myLatLng,
-    map,
-    title: "Coding Factory Paris",
-  });
-}
 
