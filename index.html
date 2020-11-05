@@ -62,11 +62,30 @@
                         <div class="yamshowapi animate__animated animate__fadeIn" id="yamshowapi">
                             <div class="yamchoose">
                                 <form id="formyam">
-                                    <label id="yamcount" for="country">Pays</label>
+                                    <label id="yamcount" for="country">Circuits</label>
                                     <select id="country" name="country">
-                                        <option value="france" id="yamopt">France</option>
-                                        <option value="australia" id="yamopt">Australia</option>
-                                        <option value="usa" id="yamopt">USA</option>
+                                        <option value="france" id="yamopt">Le Mans - France</option>
+                                        <option value="australia" id="yamopt">Phillip Island - Australie</option>
+                                        <option value="angleterre" id="yamopt">Silverstone - Angleterre</option>
+                                        <option value="autriche" id="yamopt">Red Bull Ring - Autriche</option>
+                                        <option value="reptechque" id="yamopt">Brno - République Tchèque</option>
+                                        <option value="allemagne" id="yamopt">Sachsenring - Allemagne</option>
+                                        <option value="paysbas" id="yamopt">TT Circuit Assen - Pays-Bas</option>
+                                        <option value="catalogne" id="yamopt">Barcelone - Catalogne</option>
+                                        <option value="italie" id="yamopt">Mugello - Italie</option>
+                                        <option value="espagne" id="yamopt">Jerez - Espagne</option>
+                                        <option value="usa" id="yamopt">Circuit des Amériques - USA</option>
+                                        <option value="argentine" id="yamopt">Autódromo Termas de Río Hondo - Argentine</option>
+                                        <option value="saintmarin" id="yamopt">Misano - Saint-Marin</option>
+                                        <option value="aragon" id="yamopt">Motorland Aragon - Aragon</option>
+                                        <option value="thailande" id="yamopt">Buriram - Thailande</option>
+                                        <option value="japon" id="yamopt">Motegi - Japon</option>
+                                        <option value="malaisie" id="yamopt">Sepang - Malaisie</option>
+                                        <option value="valence" id="yamopt">Valence - Valence</option>
+                                        <option value="indiana" id="yamopt">Indianapolis Motor Speedway - 	Indianapolis</option>
+                                        <option value="qatar" id="yamopt">Qatar</option>
+                                        
+                                        
                                     </select>
                                 </form>
                                 <a href="map/map.html" id="yamredirect" onclick="transfer()"><p id="yamredirect">Voir sur la carte</p></a>
@@ -85,41 +104,100 @@
                     </div>
 
                     <div class="choix">
-                        <div class="details-button" id="ducbut">   
-                            <button id="pilote-button" onclick="displayElem('ducbut','ducpilote')">Le Pilote</button>
-                            <button id="moto-button">Sa Moto</button>
-                            <button id="ecurie-button">Palmarès écurie</button>                         
+                        <div id="details-button">   
+                            <button class="bouton" id="pilote-button">Le Pilote</button>
+                            <button class="bouton" id="moto-button">Sa Moto</button>
+                            <button class="bouton" id="ecurie-button">Palmarès écurie</button>                         
                         </div>
 
-                        <div class="pilote-info" id="ducpilote">    
-                            
+                        <div id="pilote-info">  
+                            <div id="infos"> 
+                                <h2>Danilo Petrucci</h2>
+                                <p>30 ans - 24/10/1990</p>
+                                <p>Né à Terni - Italie</p>
+                                <p>Taille : 181 cm</p>
+                                <p>Poids : 80 kg</p>
+                            </div>
+                            <div id="palmares">
+                                <h3>Palmarès</h3>
+                                <ul>
+                                    <li>2019 : 6eme au MotoGP</li>
+                                    <li>2018 : 8eme au MotoGP</li>
+                                    <li>2017 : 8eme au MotoGP</li>
+                                    <li>2016 : 14eme au MotoGP</li>
+                                    <li>2015 : 10eme au MotoGP</li>
+                                </ul> 
+                            </div>                  
                         </div>
 
-                        <div class="moto-info">                            
+                        <div id="infos-moto">
+                            <div>
+                                <h2>Ducati Desmosedici</h2>
+                                <img id="imgmoto" src="img/ducatiMoto.png" alt="photo de la moto">
+                            </div>
+                            <div>
+                                <h2>Fiche technique</h2>
+                                <img id="ficheMoto" src="img/ficheMoto.png" alt="fiche technique de la moto">
+                            </div>               
                         </div>
 
-                        <div class="ecurie-palmares">                            
+                        <div id="imgMotoFull">
+                            <img src="img/ducatiMoto.png" alt="">
+                            <button class="retour2">Retour</button>
+                        </div>
+
+                        <div id="ficheMotoFull">
+                            <img src="img/ficheMoto.png" alt="">
+                            <button class="retour2">Retour</button>
+                        </div>
+
+                        <div id="ecurie-palmares"> 
+                            <table>
+                                <tr>
+                                    <th colspan="2">Racing records</th>
+                                </tr>
+                                <tr>
+                                    <td class="name">World titles</td>
+                                    <td class="wins">42</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">MotoGP wins</td>
+                                    <td class="wins">51</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Superbike wins</td>
+                                    <td class="wins">366</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Other titles</td>
+                                    <td class="wins">141</td>
+                                </tr>
+                            </table>                             
+                        </div>
+                        
+                        <div>
+                            <button id="retour">Retour</button>
                         </div>
                     </div>
                 </div>
                 <div id="suzuki" class="animate__animated animate__zoomIn">
                     <div class = "suzhead">
-                        <img id="suzRins" src="img/Alex_Rins.png" alt="imge de Alex Rins" class="animate__animated animate__zoomIn animate__delay-1s" onclick="displayElem('suzbefore','suzafter')">
-                        <img id="suzMir" src="img/Joan_Mir.png" alt="image de Joan Mir" class="animate__animated animate__zoomIn animate__delay-1s" onclick="displayElem('suzbefore','suzafter')">
+                        <img id="suzRins" src="img/Alex_Rins.png" alt="imge de Alex Rins" class="animate__animated animate__zoomIn animate__delay-1s" onclick="suzdisplayElem2('suzbefore','suzMirafter','suzRinsafter')">
+                        <img id="suzMir" src="img/Joan_Mir.png" alt="image de Joan Mir" class="animate__animated animate__zoomIn animate__delay-1s" onclick="suzdisplayElem2('suzbefore','suzRinsafter','suzMirafter')">
                     </div>
                     <div class="suztext">
                         <div id="suzclick1">
-                            <button id="suzbutpilote" onclick="suzdisplayElem('suzclick1','suzpilote')">Pilote</button>
-                            <button id="suzbutmoto" onclick="suzdisplayElem('suzclick1','suzbefore')">Écurie</button>   
+                            <button id="suzbutpilote" onclick="suzdisplayElem1('suzclick1','suzpilote')">Pilote</button>
+                            <button id="suzbutteam" onclick="suzdisplayElem1('suzclick1','suzteam')">Écurie</button>   
                         </div>
                         <div id="suzpilote">
                             <div id="suzbefore">
-                                <h1>Bonjour</h1>
+                                <h1>Clique sur les pilotes pour voir leur palmarès</h1>
                                 <div id="suzclick2">
-                                    <button id="suzbutret" onclick="suzdisplayElem('suzpilote','suzclick1')">Retour</button>
+                                    <button id="suzbutret" onclick="suzdisplayElem1('suzpilote','suzclick1')">Retour</button>
                                 </div>
                             </div>
-                            <div id="suzafter">
+                            <div id="suzMirafter">
                                 <div id="suzMir2">
                                     <div class="suztitle">
                                         <h1 id="suzname">Joan Mir</h1>
@@ -128,21 +206,43 @@
                                     </div>
                                     <div class="suztxt">
                                         <h1>Fini quatrième au CEV</h1>
-                                        <h1>Début Moto 3, 1er titre de Champion du Monde</h1>
+                                        <h1>Début Moto3, 1er titre de Champion du Monde</h1>
                                         <h1>Début Moto2 et Quatre Podiums</h1>    
                                         <h1>Début MotoGP avec Suzuki ECSTAR</h1>
                                     </div>
                                 </div>
                                 <div id="suzclick2">
-                                    <button id="suzbutret" onclick="suzdisplayElem('suzafter','suzbefore')">Retour</button>
+                                    <button id="suzbutret" onclick="suzdisplayElem1('suzMirafter','suzbefore')">Retour</button>
+                                </div>
+                            </div>
+                            <div id="suzRinsafter">
+                                <div id="suzRins2">
+                                    <div class="suztitle">
+                                        <h1 id="suzname">Alex Rins</h1>
+                                        <h3 id="suzage">24 ans</h3>
+                                        <h4 id="suzwork">Pilote Professionnel</h4>
+                                    </div>
+                                    <div class="suztxt">
+                                        <h1>Champion CEV</h1>
+                                        <h1>Début Moto3, Vice Champion du Monde</h1>
+                                        <h1>Début Moto2, Vice Champion du Monde </h1>    
+                                        <h1>Début MotoGP avec Suzuki ECSTAR</h1>
+                                    </div>
+                                </div>
+                                <div id="suzclick2">
+                                    <button id="suzbutret" onclick="suzdisplayElem1('suzRinsafter','suzbefore')">Retour</button>
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div> 
+                    <div id="suzteam">
+                        <div id="suzclick2">
+                            <button id="suzbutret2" onclick="suzdisplayElem1('suzteam','suzclick1')">Retour</button>
+                        </div>
+                    </div>
                 </div>
             </div>     
         </div>
 	</body>
     <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="suzscript.js"></script>
 </html>

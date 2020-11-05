@@ -1,3 +1,5 @@
+// MAEL PART // // MAEL PART // // MAEL PART // // MAEL PART // // MAEL PART // // MAEL PART // 
+
 let actualPage = "home";
 let title = document.getElementById('title');
 let background = document.getElementById('container');
@@ -90,4 +92,107 @@ function transfer(){
     localStorage.setItem('pos',place);
 }
 
+// MAEL PART // // MAEL PART // // MAEL PART // // MAEL PART // // MAEL PART // 
 
+// CHRIS PART // // CHRIS PART // // CHRIS PART // // CHRIS PART // // CHRIS PART //
+
+// Recuperation des sections
+const detailsButton = document.getElementById("details-button");
+const piloteInfos = document.getElementById("pilote-info");
+const motoInfos = document.getElementById("infos-moto");
+const ecuriePalmares = document.getElementById("ecurie-palmares");
+const imgMotoFull = document.getElementById("imgMotoFull");
+const ficheMotoFull = document.getElementById("ficheMotoFull");
+// Recuperation des boutons
+const piloteButton = document.getElementById("pilote-button");
+const motoButton = document.getElementById("moto-button");
+const ecurieButton = document.getElementById("ecurie-button");
+const retour = document.getElementById("retour");
+const imgMoto = document.getElementById("imgmoto");
+const ficheMoto = document.getElementById("ficheMoto");
+
+function toggleChoix(){
+    piloteInfos.style.display = "none";
+    motoInfos.style.display = "none";
+    ecuriePalmares.style.display = "none";
+    retour.style.display = "none";
+    detailsButton.style.display = "flex";
+};
+function togglePilote(){
+    detailsButton.style.display = "none";
+    piloteInfos.style.display = "flex";
+    retour.style.display = "block";
+};
+function toggleMoto(){
+    detailsButton.style.display = "none";
+    motoInfos.style.display = "flex";
+    retour.style.display = "block";
+};
+function toggleEcurie(){
+    detailsButton.style.display = "none";
+    ecuriePalmares.style.display = "flex";
+    retour.style.display = "block";
+};
+function scaleImgMoto(){
+    if (getComputedStyle(imgMotoFull).display === "none"){
+        motoInfos.style.display = "none";
+        retour.style.display = "none";
+        imgMotoFull.style.display = "flex";
+    }
+    else {
+        imgMotoFull.style.display = "none";
+        motoInfos.style.display = "flex";
+        retour.style.display = "block";
+    }
+};
+function scaleFicheMoto(){
+    if (getComputedStyle(ficheMotoFull).display === "none"){
+        motoInfos.style.display = "none";
+        retour.style.display = "none";
+        ficheMotoFull.style.display = "flex";
+    }
+    else {
+        ficheMotoFull.style.display = "none";
+        motoInfos.style.display = "flex";
+        retour.style.display = "block";
+    }
+};
+
+piloteButton.addEventListener("click", togglePilote);
+motoButton.addEventListener("click", toggleMoto);
+ecurieButton.addEventListener("click", toggleEcurie);
+retour.addEventListener("click", toggleChoix);
+imgMoto.addEventListener("click", scaleImgMoto);
+imgMotoFull.addEventListener("click", scaleImgMoto);
+ficheMoto.addEventListener("click", scaleFicheMoto);
+ficheMotoFull.addEventListener("click", scaleFicheMoto);
+
+
+// CHRIS PART // // CHRIS PART // // CHRIS PART // // CHRIS PART // // CHRIS PART // // CHRIS PART //
+
+
+// LEONARD PART // // LEONARD PART // // LEONARD PART // // LEONARD PART // // LEONARD PART // 
+
+  
+let joan = document.getElementById('suzMir');
+
+function suzdisplayElem1(hide, show){
+    let hidetext = document.getElementById(hide);
+    let showtext = document.getElementById(show);
+    
+    hidetext.style.display = 'none';
+    showtext.style.display = 'flex';
+}
+
+function suzdisplayElem2(hide, hide2, show){
+    let hidetext = document.getElementById(hide);
+    let hidetext2 = document.getElementById(hide2)
+    let showtext = document.getElementById(show);
+    
+    hidetext.style.display = 'none';
+    hidetext2.style.display = 'none';
+    showtext.style.display = 'flex';
+}
+
+
+// LEONARD PART // // LEONARD PART // // LEONARD PART // // LEONARD PART // // LEONARD PART // 
