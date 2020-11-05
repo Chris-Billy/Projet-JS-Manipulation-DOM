@@ -39,6 +39,7 @@
                         <div id="yambefore">
                             <h1 id="yamtxtbef">Clique sur Fabio Quartararo pour afficher son palmarès et sa biographie!</h1>
                             <button id="yambtnbef" onclick="displayElem('yambefore','yamgif')">Clique ici pour voir un Gif de Fabio !</button>
+                            <button id="yambtnvid" onclick="displayElem('yambefore','yamvid')">Clique ici pour voir une chute de Fabio !</button>
                         </div>
                         <div class="yamafter animate__animated animate__fadeIn" id="yamafter">
                             <div class="yampres">
@@ -84,8 +85,6 @@
                                         <option value="valence" id="yamopt">Valence - Valence</option>
                                         <option value="indiana" id="yamopt">Indianapolis Motor Speedway - 	Indianapolis</option>
                                         <option value="qatar" id="yamopt">Qatar</option>
-                                        
-                                        
                                     </select>
                                 </form>
                                 <a href="map/map.html" id="yamredirect" onclick="transfer()"><p id="yamredirect">Voir sur la carte</p></a>
@@ -95,6 +94,15 @@
                         <div class="yamgif animate__animated animate__fadeIn" id="yamgif">
                             <img id="yamfabgif" src="img/fabio.gif">
                             <button id="yambtnret2" onclick="displayElem('yamgif','yambefore')">Retour</button>
+                        </div>
+                        <div class="yamvid animate__animated animate__fadeIn" id="yamvid">
+                            <video id="yamfabvid" src="img/fabioqvid.mp4"></video>
+                            <button id="yambtnret3" onclick="displayElem('yamvid','yambefore')">Retour</button>
+                            <img src="img/yamplay.png" id="yamplay" class="playpauseyam" onclick="displayElem('yamplay','yampause');playPause()"/>
+                            <img src="img/yampause.png" id="yampause" class="playpauseyam" onclick="displayElem('yampause','yamplay');playPause()"/>
+                            <img src="img/yamreplay.png" id="yamreplay" onclick="yamreplay()"/>
+                            <img src="img/yamfullscreen.png" id="yamfull" onclick="yamFull()" />
+                            <img src="img/yamfullscreen.png" id="yamfull2" onclick="yamNFull()" />
                         </div>
                     </div>
                 </div>
@@ -188,7 +196,8 @@
                     <div class="suztext">
                         <div id="suzclick1">
                             <button id="suzbutpilote" onclick="suzdisplayElem1('suzclick1','suzpilote')">Pilote</button>
-                            <button id="suzbutteam" onclick="suzdisplayElem1('suzclick1','suzteam')">Écurie</button>   
+                            <button id="suzbutteam" onclick="suzdisplayElem1('suzclick1','suzteam')">La Moto</button>  
+                            <button id="suzbutteam" onclick="suzdisplayElem1('suzclick1','suzvideo')">Vidéo</button> 
                         </div>
                         <div id="suzpilote">
                             <div id="suzbefore">
@@ -234,12 +243,27 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    <div id="suzteam">
-                        <div id="suzclick2">
-                            <button id="suzbutret2" onclick="suzdisplayElem1('suzteam','suzclick1')">Retour</button>
+                        <div id="suzteam">   
+                            <div class="suzmoto">
+                                <img id="suzphotomoto" src="img/moto_rins.jpg">
+                            </div>
+                            <div id="suzclick2">
+                                <button id="suzbutret2" onclick="suzdisplayElem1('suzteam','suzclick1')">Retour</button>
+                            </div>  
                         </div>
-                    </div>
+                        <div id="suzvideo">
+                            <div id="suzclick3">
+                                <img id="play" class="videobut" src="img/play.png" onclick="suzdisplayElem1('play','pause');playPause()">
+                                <img id="pause" class="videobut" src="img/pause.png" onclick="suzdisplayElem1('pause','play'); playPause()">
+                            </div>
+                            <video id="video">
+                                <source src="img/alex_rins.mp4" type="video/mp4">
+                            </video>
+                            <div id="suzclick2">
+                                <button id="suzbutret3" onclick="suzdisplayElem1('suzvideo','suzclick1')">Retour</button>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>     
         </div>

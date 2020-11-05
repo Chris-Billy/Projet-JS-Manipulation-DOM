@@ -7,6 +7,10 @@ body,html{
     margin:0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 #container{
     height:100vh;
     width: 100vw;
@@ -163,7 +167,7 @@ body,html{
     transition-duration: 1s;
 }
 #yambtnbef{
-    height: 40px;
+    height: 85px;
     width: 250px;
     border-radius:10px;
     outline:none;
@@ -390,6 +394,88 @@ body,html{
     background: #333333;
     color:white;
 }
+
+#yambtnvid{
+    height: 85px;
+    width: 250px;
+    outline:none;
+    border:none;
+    margin-top: 2%;
+    margin-bottom: -5%;
+    border-radius:10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+}
+#yambtnvid:hover{
+    transition-duration: 500ms;
+    background: #333333;
+    color:white;
+}
+
+#yamvid{
+    display:none;
+    height:70%;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#yamfabvid{
+    display:flex;
+    height:100%;
+    width: 100%;
+}
+
+#yambtnret4{
+    height: 60%;;
+    width: 25%;
+    outline:none;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+}
+#yambtnret4:hover{
+    transition-duration: 500ms;
+    background: #333333;
+    color:white;
+}
+
+#yamplay{
+    display:flex;
+    position: absolute;
+    height: 15px;
+    margin-left: -17%;
+    margin-top: 9.5%;  
+}
+#yampause{
+    display:none;
+    position: absolute;
+    height: 15px;
+    margin-left: -17%;
+    margin-top: 9.5%;  
+}
+#yamreplay{
+    display:flex;
+    position: absolute;
+    height: 15px;
+    margin-left: -15%;
+    margin-top: 9.5%;  
+}
+#yamfull{
+    position: absolute;
+    height: 15px;
+    margin-left: 17.5%;
+    margin-top: 9.5%;
+}
+#yamfull2{
+    display:none;
+    position: absolute;
+    height: 15px;
+    margin-left: 17.5%;
+    margin-top: 9.5%;
+}
+
 /* YAMAHA PART END */
 
 /* DUCATI PART */
@@ -664,6 +750,15 @@ body,html{
     align-items: center;
     flex-direction: column;
 }
+#suzvideo{
+    display: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 #suzbefore{
     display:flex;
     height:15%;
@@ -745,9 +840,12 @@ body,html{
     justify-content: space-between;
     z-index: 2;
     height: 50px;
-    width: 404px;
+    width: 608px;
 }
 #suzclick2{
+    z-index: 2;
+}
+#suzclick3{
     z-index: 2;
 }
 #suzbutret{
@@ -766,6 +864,17 @@ body,html{
     width: 200px;
     border-radius:10px;
     margin-top: 1%;
+    margin-bottom: -5%;
+    outline:none;
+    border:none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+}
+#suzbutret3{
+    height: 25px;
+    width: 200px;
+    border-radius:10px;
+    margin-top: 5%;
     margin-bottom: -5%;
     outline:none;
     border:none;
@@ -809,6 +918,40 @@ body,html{
     background: #333333;
     color:white;
 }
+#suzbutret2:hover{
+    transition-duration: 500ms;
+    background: #333333;
+    color:white;
+}
+#suzbutret3:hover{
+    transition-duration: 500ms;
+    background: #333333;
+    color:white;
+}
+#video{
+    width: 600px;
+}
+#play{
+    position: absolute;
+    display: flex;
+    height: 25px;
+    width: 25px;
+}
+#pause{
+    position: absolute;
+    display: none;
+    height: 25px;
+    width: 25px;
+}
+.videobut{
+    margin-top: 16.5%;
+    margin-left: -14.5%;
+}
+
+#suzphotomoto{
+    border-radius:10px;
+}
+
 
 /* SUZUKI PART END */
 

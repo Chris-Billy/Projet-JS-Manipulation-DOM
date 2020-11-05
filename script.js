@@ -7,6 +7,12 @@ let fabio = document.getElementById('yamfabio');
 let timed = document.getElementById('date');
 let place;
 let timed2 = document.getElementById('datep');
+let yamvid = document.getElementById('yamfabvid');
+let yamplay = document.getElementById('yamplay');
+let yampause = document.getElementById('yampause');
+let yamreplaybtn = document.getElementById('yamreplay');
+let yamfullbtn = document.getElementById('yamfull');
+let yamfullbtn2 = document.getElementById('yamfull2');
 
 function displayPage(page){
     console.log(actualPage);
@@ -92,6 +98,53 @@ function transfer(){
     localStorage.setItem('pos',place);
 }
 
+
+function playPause(){
+    if (yamvid.paused){
+        yamvid.play();
+    }else{
+        yamvid.pause();
+    }
+}
+function yamreplay(){
+    yamvid.currentTime = 0;
+}
+
+
+function yamFull(){
+    yamvid.style.transform = 'scale(1.9)';
+    yamvid.style.marginBottom = '10%';
+    yamplay.style.marginLeft = '-35%';
+    yampause.style.marginLeft = '-35%';
+    yamreplaybtn.style.marginLeft = '-33%';
+    yamfullbtn.style.marginLeft = '35%';
+    yamfullbtn2.style.marginLeft = '35%';
+    yamplay.style.marginTop = '17%';
+    yampause.style.marginTop = '17%';
+    yamreplaybtn.style.marginTop = '17%';
+    yamfullbtn.style.marginTop = '17%';
+    yamfullbtn2.style.marginTop = '17%';
+    yamfullbtn.style.display = 'none';
+    yamfullbtn2.style.display = 'flex';
+}
+function yamNFull(){
+    yamvid.style.transform = 'scale(1)';
+    yamvid.style.marginBottom = '0%';
+    yamplay.style.marginLeft = '-17%';
+    yampause.style.marginLeft = '-17%';
+    yamreplaybtn.style.marginLeft = '-15%';
+    yamfullbtn.style.marginLeft = '17%';
+    yamfullbtn2.style.marginLeft = '17%';
+    yamplay.style.marginTop = '9.5%';
+    yampause.style.marginTop = '9.5%';
+    yamreplaybtn.style.marginTop = '9.5%';
+    yamfullbtn.style.marginTop = '9.5%';
+    yamfullbtn2.style.marginTop = '9.5%';
+    yamfullbtn2.style.display = 'none';
+    yamfullbtn.style.display = 'flex';
+    
+}
+
 // MAEL PART // // MAEL PART // // MAEL PART // // MAEL PART // // MAEL PART // 
 
 // CHRIS PART // // CHRIS PART // // CHRIS PART // // CHRIS PART // // CHRIS PART //
@@ -175,6 +228,8 @@ ficheMotoFull.addEventListener("click", scaleFicheMoto);
 
   
 let joan = document.getElementById('suzMir');
+let video = document.getElementById('video'); 
+let play = document.getElementById('play')
 
 function suzdisplayElem1(hide, show){
     let hidetext = document.getElementById(hide);
@@ -192,6 +247,13 @@ function suzdisplayElem2(hide, hide2, show){
     hidetext.style.display = 'none';
     hidetext2.style.display = 'none';
     showtext.style.display = 'flex';
+}
+
+function playPause() { 
+    if (video.paused) 
+        video.play(); 
+    else 
+        video.pause(); 
 }
 
 
