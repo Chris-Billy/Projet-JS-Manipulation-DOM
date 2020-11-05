@@ -26,7 +26,6 @@ let myLatLng;
 
 
 let getStorage = localStorage.getItem('pos')
-console.log('cc '+ getStorage);
 
 if (localStorage.getItem('pos') == 'france'){
   myLatLng = france;
@@ -66,8 +65,7 @@ if (localStorage.getItem('pos') == 'france'){
   myLatLng = valence;
 } else if(localStorage.getItem('pos') == 'indiana') {
   myLatLng = indianapolis;
-}
- else if(localStorage.getItem('pos') == 'qatar') {
+}else if(localStorage.getItem('pos') == 'qatar') {
   myLatLng = qatar;
 }
 

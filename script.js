@@ -99,7 +99,7 @@ function transfer(){
 }
 
 
-function playPause(){
+function playPauseYam(){
     if (yamvid.paused){
         yamvid.play();
     }else{
