@@ -26,8 +26,8 @@ let pays = {
         },
     "espagne" : 
         {
-          "lat": 36.755868,
-          "lng": -6.017143
+          "lat": 36.709582,
+          "lng": -6.033441
         },
     "italie" : 
         {
@@ -116,6 +116,7 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
     center: pays[getStorage],
+    mapTypeId: "hybrid"
   });
   new google.maps.Marker({
     position: pays[getStorage],

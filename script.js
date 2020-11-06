@@ -151,6 +151,7 @@ function scaleImgMoto(){
         motoInfos.style.display = "none";
         retour.style.display = "none";
         imgMotoFull.style.display = "flex";
+        imgMotoFull.style.marginLeft = "-30%";
     }
     else {
         imgMotoFull.style.display = "none";
@@ -218,3 +219,15 @@ function playPause() {
 
 
 // LEONARD PART // // LEONARD PART // // LEONARD PART // // LEONARD PART // // LEONARD PART // 
+
+const ecuries = ['Yamaha', 'Ducati', 'Suzuki'];
+let ecubeftxt = "Liste des écuries : ";
+
+for (let i = 0; i < ecuries.length; i++) {
+    if(i === ecuries.length - 1){
+        ecubeftxt += "et " + ecuries[i] + '.';
+       } else {
+           ecubeftxt += ecuries[i] + ', ';
+       }
+}
+document.getElementById("listecuries").textContent = ecubeftxt;

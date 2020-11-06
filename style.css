@@ -61,12 +61,18 @@ body::-webkit-scrollbar {
 }
 .text{
     display:flex;
-    height:10%;
+    height:15%;
     width: 50%;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #title{
     font-family: 'Noto Sans JP', sans-serif;
+}
+#listecuries{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: -2%;
 }
 .buttons{
     display:flex;
@@ -618,10 +624,9 @@ body::-webkit-scrollbar {
 }
 #ficheMotoFull{
     display: none;
-    width: 600px;
-    height: auto;
+    width: 1000px;
+    height: 860px;
     margin-bottom: 120px;
-    margin-right: 70px;
 }
 #ficheMotoFull img{
     border-radius: 20px;
